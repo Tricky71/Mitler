@@ -1,0 +1,29 @@
+.contacts-top
+    display: flex
+    justify-content: space-between
+    align-items: center   
+
+.contacts-top__info
+    display: flex
+    justify-content: space-between
+    align-items: center
+    font-family: firasans-ex
+    font-size: 16px
+    color: #e0e0e0
+
+.contacts-top__info i
+    margin-right: 8px
+    color: darken(#fff, 70)
+
+@media (max-width: 990px)    
+    .contacts-top__info
+        font-size: 14px
+
+@media (max-width: 768px)  
+    .contacts-top
+        flex-direction: column
+        align-items: flex-start  
+
+    .contacts-top__info--time
+        display: none          
+    
