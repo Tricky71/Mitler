@@ -8,6 +8,7 @@
 @import "blocks/promo"
 @import "blocks/social"
 @import "blocks/contacts-top"
+@import "blocks/services"
 
 *
 	-webkit-box-sizing: border-box
@@ -63,6 +64,15 @@ body
 ::selection
 	background-color: $accent
 	color: #fff
+
+// Функция чередования цветов фона
+
+$colors: $blue, $red, $accent
+@for $i from 1 through length($colors)
+   .services .owl-item:nth-child(#{length($colors)}n+#{$i}) 
+	   background-color: nth($colors, $i)
+
+
 
 
 

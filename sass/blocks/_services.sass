@@ -1,0 +1,144 @@
+.services
+    margin: 0
+    padding: 0
+    position: relative
+    list-style: none
+
+.services .owl-item
+    backface-visibility: inherit
+
+.services .owl-item:nth-child(even) .services__item
+	flex-direction: column-reverse	
+
+.services .owl-nav button.owl-prev, .services .owl-nav button.owl-next
+    width: 45px
+    height: 45px
+    position: absolute
+    background-color: #fff
+
+.services .owl-nav
+    font-size: 20px
+
+.services .owl-prev
+    top: 0
+    left: 0
+       
+.services .owl-next
+    top: 0
+    right: 0  
+
+.services__item
+    display: flex
+    flex-direction: column
+    
+.services__item:hover .services__item-picture
+    opacity: 1
+           
+.services__item-picture
+    min-height:  429px  
+    max-height: 50%
+    background-size: cover
+    background-position: center 
+    opacity: .8
+    transition: opacity .5s ease
+
+.services__item-picture--cosmet
+    background-image: url('../img/service.png')    
+
+.services__item-picture--hair
+    background-image: url('../img/service2.png')
+
+.services__item-picture--manic
+    background-image: url('../img/service3.png')
+
+.services__item-picture--manic_2
+    background-image: url('../img/service2.png')   
+
+.services__item-info
+    padding: 30px 10% 30px  
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    align-items: center
+    color: #fff
+
+.services__item-logo 
+    margin-bottom: 15px
+
+.services__item-title        
+    margin: 0
+    padding: 0
+    display: flex
+    flex-direction: column
+    align-items: center
+
+.services__item-title b
+    margin-bottom: 10px
+    font-family: raleway-ex
+    font-size: 30px
+    font-weight: 800
+    line-height: 30px   
+    text-transform: uppercase 
+    
+.services__item span 
+    margin-bottom: 15px
+    font-family: raleway-ex
+    font-weight: 300
+    font-size: 18px
+    line-height: 28px
+
+.services__item-price
+    margin: 0
+    padding: 0
+    width: 100%
+    list-style: none
+    margin-bottom: 30px
+
+.services__item-plan
+    padding: 12px 0 
+    border-bottom: rgba(#4a4a4a, .12) 1px solid
+    font-family: raleway-ex
+    font-size: 18px
+    font-weight: 300  
+    text-align: center 
+
+.services__item-plan:last-child
+    border-bottom: none         
+
+.services__item-plan b
+
+    color: #4a4a4a 
+    font-family: firasans-ex
+    font-weight: 700
+    font-size: 18px
+
+.services__item-plan .fa
+    margin-left: 3px
+    color: #4a4a4a 
+    font-size: 14px
+    font-weight: 700
+
+.services__item-button
+    border-radius: 3px
+    border-bottom: 5px solid #e4e4e4
+    color: #444444
+    font-size: 13px
+    font-weight: 600
+    text-transform: uppercase
+    letter-spacing: 3px
+    padding: 16px 45px 15px
+    background-color: #fff
+    outline: none  
+
+.services__item-button:hover
+    background-color: darken(#e4e4e4, 20%)
+
+@media (max-width: 480px) 
+    .services__item-title b
+        font-size: 25px
+
+@media (max-width: 1200px)            
+    .services__item
+        flex-direction: column-reverse
+      
+
