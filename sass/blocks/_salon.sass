@@ -1,0 +1,77 @@
+.salon
+    padding: 7% 0
+
+.salon .fotorama__wrap
+    position: relative
+
+.salon .fotorama__nav-wrap
+    position: absolute
+    padding: 0 30px
+    width: 100%
+    bottom: 15px
+    left: 0   
+
+.salon .fotorama__active  .fotorama__thumb
+     border-color:  #3d3c3c  
+
+.salon .fotorama__thumb
+    border:  5px solid #fff
+    transition: border-color .5 ease       
+    &-border
+        border-color:  #3d3c3c
+
+.salon .fotorama__arr
+    &--prev::before, &--next::before
+        font-family: fontawesome
+        font-size: 30px
+        color: #fff
+
+.salon .fotorama__arr--prev::before
+        content: '\f053'   
+
+.salon .fotorama__arr--next::before
+        content: '\f054'  
+
+.salon__info
+    padding: 30px 0
+    color: #fff     
+
+.salon__title
+    margin: 0
+    padding: 0
+    margin-bottom: 20px
+    font-size: 30px
+    text-transform: uppercase
+
+.salon__title span
+    margin-left: 10px
+    color: $accent    
+
+.salon__text
+    margin: 0
+    padding: 0
+    margin-bottom: 30px
+    font-size: 18px
+
+.salon__text strong
+    color: $accent  
+
+@media (max-width: 480px)
+    .salon__title
+        margin-bottom: 10px
+        font-size: 23px
+
+    .salon__text
+        margin-bottom: 15px
+        font-size: 16px   
+
+    .salon .fotorama__nav-wrap
+        display: none
+        
+@media (max-width: 1200px)
+    .salon__info 
+        padding: 0        
+
+
+    
+   
