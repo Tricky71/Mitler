@@ -1,0 +1,93 @@
+.offer
+    padding: 25% 0
+    display: flex
+    flex-direction: column
+    align-items: start
+    
+.offer__title
+    margin-bottom: 10px
+    font-family: raleway-ex
+    font-weight: 800
+    text-transform: uppercase
+    color: #fff    
+    font-size: 30px 
+
+.offer__text
+    margin: 0
+    padding: 0
+    margin-bottom: 45px
+    color: #fff
+
+.offer
+    input, textarea, select
+        color: #fff    
+
+.offer input, .offer select
+    width: 100%
+    padding: 10px 24px
+    border: 1px solid #e0b666
+    border-bottom: 2px solid #e0b666
+    border-radius: 3px
+    background-color: transparent    
+    color: #fff
+    outline: none
+
+.offer input
+    margin-bottom: 18px 
+
+.offer input::placeholder
+    color: #fff
+
+.offer select
+    margin-bottom: 40px 
+    padding: 12px 24px
+
+.offer select option
+    background-color: $accent    
+
+.offer__button
+    border-radius: 3px
+    border-bottom: 5px solid #e4e4e4
+    color: #444444
+    font-size: 13px
+    font-weight: 600
+    text-transform: uppercase
+    letter-spacing: 3px
+    padding: 16px 45px 15px
+    background-color: #fff
+    outline: none   
+
+.offer__button:hover
+    background-color: darken(#e4e4e4, 20%)
+
+.offer__success    
+    display: none
+    position: absolute
+    top: 0
+    bottom: 0
+    right: 0
+    left: 0
+    text-transform: uppercase
+    font-weight: bold
+    
+    justify-content: center
+    align-items: center
+    color: #fff
+    z-index: 10
+
+.offer__success ~ * 
+    transition: all .5s ease
+
+.offer__success--active
+        & ~ *
+            opacity: .5
+            filter: blur(10px)
+
+@media (max-width: 992px)
+    .offer
+        padding: 15% 0            
+
+           
+
+
+     

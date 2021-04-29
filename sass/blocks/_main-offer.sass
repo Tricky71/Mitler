@@ -1,0 +1,30 @@
+.main-offer
+    position: relative
+    background-size: contain
+    background-position: 15% 
+    background-repeat: no-repeat
+    
+.main-offer::before
+    position: absolute
+    content: ''
+    top: 0
+    bottom: 0
+    left: 50%
+    right: 0
+    background-color: rgba($accent, .9)
+
+@media (max-width: 1200px)
+    .main-offer
+        background-size: cover    
+
+@media (max-width: 992px)
+    .main-offer::before
+        left: 0   
+      
+
+
+       
+
+     
+    
+            

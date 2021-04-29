@@ -38,6 +38,24 @@ $(function() {
 
 	$('.services__item-info').equalHeights();
 
+	//E-mail Ajax Send
+	$("form.offer").submit(function() { //Change
+		var th = $(this);
+		$.ajax({
+			type: "POST",
+			url: "mail.php", //Change
+			data: th.serialize()
+		}).done(function() {
+			$(th).find('.offer__success').addClass('offer__success--active').css('display', 'flex').hide().fadeIn();
+			setTimeout(function() {
+				// Done Functions
+				$(th).find('.offer__success').removeClass('offer__success--active').fadeOut();
+				th.trigger("reset");
+			}, 3000);
+		});
+		return false;
+	});
+
 	
 	
 })
