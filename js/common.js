@@ -36,6 +36,13 @@ $(function() {
 		}
 	});
 
+	$('.owl-carousel--reviews').owlCarousel({
+		loop: true,
+		smartSpeed: 700,
+		// dots: true,
+		items: 1
+	});
+
 	$('.services__item-info').equalHeights();
 
 	//E-mail Ajax Send

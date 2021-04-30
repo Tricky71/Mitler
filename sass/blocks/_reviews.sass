@@ -1,0 +1,90 @@
+.reviews .owl-theme .owl-dots .owl-dot.active span
+    background-color: $accent
+
+.reviews .owl-theme .owl-nav.disabled+.owl-dots
+    margin-top: 70px    
+    
+.reviews__title
+    margin: 0
+    padding: 0
+    margin-bottom: 50px
+    color: #fff
+    font-size: 30px
+    font-weight: 800
+    text-transform: uppercase
+    text-align: center
+
+.reviews__title span
+    color: $accent   
+
+.reviews__content
+    margin: 0
+    padding: 0
+    list-style: none
+
+.reviews__item
+    display: flex
+    flex-direction: column
+    align-items: center     
+
+.reviews__item-name
+    color: #fff
+    font-size: 30px
+
+.reviews__item-description
+    margin: 0
+    padding: 0
+    margin-bottom: 25px
+    color: #888888
+    font-style: italic
+
+.reviews__item-rating
+    margin-bottom: 45px
+    color: $accent  
+
+.reviews__item-text
+    position: relative
+    margin: 0
+    padding: 0
+    padding: 0 10%
+    color: #a9a9a9 
+    font-weight: 300
+    text-align: center
+
+.reviews__item-text::before, .reviews__item-text::after
+    content: '"'
+    position: absolute
+    width: 30px
+    height: 20px
+    top: 0
+    color: $accent
+    font-family: firasans-ex
+    font-size: 54px
+    font-weight: 800
+    line-height: 54px
+
+.reviews__item-text::before
+    left: 5%   
+
+.reviews__item-text::after
+    right: 5%
+
+@media (max-width: 480px)
+    .reviews__title
+        margin-bottom: 20px
+        font-size: 20px  
+
+    .reviews__item-name   
+        font-size: 25px
+
+    .reviews__item-rating
+        margin-bottom: 25px 
+
+    .reviews .owl-theme .owl-nav.disabled+.owl-dots
+        margin-top: 10px   
+
+
+
+   
+
+
