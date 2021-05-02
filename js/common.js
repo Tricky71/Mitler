@@ -39,8 +39,31 @@ $(function() {
 	$('.owl-carousel--reviews').owlCarousel({
 		loop: true,
 		smartSpeed: 700,
-		// dots: true,
+        autoHeight: true,
 		items: 1
+	});
+
+	$('.owl-carousel--partners').owlCarousel({
+		loop: true,
+		smartSpeed: 700,
+		nav: true,
+		navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+		responsiveClass: true,
+		responsive: {
+			0: {
+				items: 1
+			},
+			468: {
+				items: 2
+			},
+			769: {
+				items: 3
+			},
+			992: {
+				items: 4
+			}
+
+		}
 	});
 
 	$('.services__item-info').equalHeights();
